@@ -1,0 +1,25 @@
+{
+  "name": "employee-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zachsteuer98/Employee-Profile-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zachsteuer98/Employee-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/Zachsteuer98/Employee-Profile-Generator#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
