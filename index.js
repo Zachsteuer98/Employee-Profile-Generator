@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 // const fs = require('fs');
-// const generatePage = require('./utils/page-template');
+// const generatePage = require('./src/generateHTML.js');
 
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
