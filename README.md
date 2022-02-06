@@ -29,8 +29,6 @@ Inquirer, and Jest
 ## Contributors
 Zachary Steuer, recieved help from UCONN Coding Bootcamp TA's, and Sean Mcgee. Collaborated with Zach Greenfield for testing purposes. 
     
-    ![image](https://user-images.githubusercontent.com/93566950/152700954-da0436b4-2a25-4d9f-92ac-0db8a8acd25b.png)
-
 
 ## license
 
@@ -44,4 +42,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 ![License badge](https://img.shields.io/badge/license-MIT-green)
+    
+![image](https://user-images.githubusercontent.com/93566950/152701052-de6765ce-d5f6-4ee0-965d-73f019c40c22.png)
+
+    
+    
  
