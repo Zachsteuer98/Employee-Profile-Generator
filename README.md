@@ -30,8 +30,6 @@ Inquirer, and Jest
 Zachary Steuer, recieved help from UCONN Coding Bootcamp TA's, and Sean Mcgee. Collaborated with Zach Greenfield for testing purposes. 
     
     ![image](https://user-images.githubusercontent.com/93566950/152700954-da0436b4-2a25-4d9f-92ac-0db8a8acd25b.png)
-    
-    ![image](https://user-images.githubusercontent.com/93566950/152700977-b61fe79c-e6c8-4a61-bb22-01288e5c881e.png)
 
 
 ## license
