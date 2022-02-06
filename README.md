@@ -25,6 +25,9 @@ Install inquirer to allow prompt questions to run in terminal, then run <node in
 
 ## Features
 Inquirer, and Jest
+    
+## Walkthrough Video Screencastify Link
+https://drive.google.com/file/d/1BHZSOU3fruK-Sy0sIXXYhmcj_G1lvYUO/view
 
 ## Contributors
 Zachary Steuer, recieved help from UCONN Coding Bootcamp TA's, and Sean Mcgee. Collaborated with Zach Greenfield for testing purposes. 
