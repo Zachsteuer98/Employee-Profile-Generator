@@ -1,21 +1,21 @@
 const inquirer = require('inquirer');
-// const fs = require('fs');
-// const generatePage = require('./src/generateHTML.js');
+const fs = require('fs');
+const render = require('./src/generateHTML');
 
 const Manager = require('./lib/Manager')
 const Engineer = require('./lib/Engineer')
 const Intern = require('./lib/Intern')
 
-const teamArray = []
+let teamArray = []
 
-const addManager = portfolioData => {
+//Manager Prompts
+const addManager = () => {
 console.log(`
 =================
-Add a New README
+Add a Manager
 =================
 `);
 
-//if there is no README array property, create one
  return inquirer.prompt([
       {
           type: 'input',
@@ -76,10 +76,11 @@ Add a New README
     const manager = new Manager (name, id, email, officeNumber);
 
     teamArray.push(manager);
-    // console.log(manager);
+    renderHTML()
     });
 };
 
+//Intern and Engineer Prompts
 const addEmployee = () => {
     console.log(`
 ============================
@@ -167,7 +168,6 @@ Adding employees to the team
         }
     ])
     .then(employeeData => {
-        // data for employee types 
 
         let { name, id, email, role, github, school, confirmAddEmployee } = employeeData; 
         let employee; 
@@ -175,16 +175,15 @@ Adding employees to the team
         if (role === "Engineer") {
             employee = new Engineer (name, id, email, github);
 
-            // console.log(employee);
+    
 
-        } else if (role === "Intern") {
+        } if (role === "Intern") {
             employee = new Intern (name, id, email, school);
 
-            // console.log(employee);
         }
 
-        teamArray.push(employee); 
-
+        teamArray.push(employee);
+        renderHTML() 
         if (confirmAddEmployee) {
             return addEmployee(teamArray); 
         } else {
@@ -193,18 +192,17 @@ Adding employees to the team
     })
 }
 
+function renderHTML() {
+    fs.writeFileSync("./dist/index.html", render(teamArray), err => {
+    })
+}
+
 addManager()
-.then(addEmployee)
-.then(teamArray => {
-  console.log(teamArray);
-})
+  .then(addEmployee)
+  .then(teamArray => {
+      console.log(teamArray)
+  })
+  .then(success => {
+      console.log("Team Profile made Sucessfully, please check out index.html for finished product")
+  })
 
-
-// const GenerateREADME = generatePage(teamArray);
-
-// fs.writeFile('./README.md', GenerateREADME, err => {
-//   if (err) throw err;
-
-//   console.log('Portfolio complete! Check out index.html to see the output!');
-// })  
-// });
